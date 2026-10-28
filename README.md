@@ -1,43 +1,21 @@
-# Astro Starter Kit: Minimal
+# 🛒 Catálogo de Productos con Astro y DummyJSON
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este proyecto es una aplicación web construida con Astro que consume una API REST externa (`DummyJSON`), procesa los datos JSON en el servidor y presenta los productos mediante un diseño en cuadrícula (CSS Grid) responsivo y un buscador interactivo del lado del cliente.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📌 API Utilizada
+- **Endpoint:** `https://dummyjson.com/products?limit=12`
+- **Formato:** JSON
+- **Propiedades renderizadas:** `title`, `price`, `category`, `rating`, `thumbnail`.
 
-## 🚀 Project Structure
+## 🛠️ Tecnologías Utilizadas
+- **Astro** (Generación de páginas y arquitectura basada en componentes)
+- **TypeScript** (Tipado e interfaces de la API)
+- **CSS Grid & Flexbox** (Diseño responsivo sin desbordamientos)
+- **JavaScript ES6+** (Filtrado DOM dinámico)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Pasos para Ejecutar el Proyecto Localmente
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. **Clonar el repositorio:**
+   ```bash
+   git clone <URL_DE_TU_REPOSITO_EN_GITHUB>
+   cd catalogo-api

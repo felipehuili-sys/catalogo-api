@@ -1,0 +1,23 @@
+---
+// src/components/ProductoCard.astro
+interface Props {
+  title: string;
+  price: number;
+  category: string;
+  rating: number;
+  thumbnail: string;
+}
+
+const { title, price, category, rating, thumbnail } = Astro.props;
+---
+
+<article class="producto" data-title={title.toLowerCase()}>
+  <img src={thumbnail} alt={`Imagen de ${title}`} loading="lazy" />
+  <span class="categoria">{category}</span>
+  <h2>{title}</h2>
+  
+  <div class="detalles">
+    <span class="precio">${price.toFixed(2)}</span>
+    <span class="valoracion">⭐ {rating.toFixed(1)}</span>
+  </div>
+</article>
